@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+.image-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden; /*2y 7aga bara 7dod 2l div 23mlha 25fa2*/
+    border: 3px solid white;
+    flex-shrink: 0; /*lw 7asl ta8yr l7agm 2lsora dh by3dal 2l2nkma4*/
+}
+.image-box img{  /*3ard 100% mn 3ard 2l2b bta3ha 2l2sasy*/
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize; /*y3ny 2wl 7arf fy 2lkalma capital lw 3ayz 2lkalma kolha captital uppercase */
+    
+}
+
+.menu{
+    background-color: #123;
+    width: 60px;
+     height: 100%vh;/* vr معناها طول الشاشه */
+     padding: 20px;
+     overflow: hidden;
+     transition: .5s; /*delay*/
+}
+.menu:hover{
+    width: 260px;
+    
+}
+ul{
+    list-style: none;
+    position: relative; /*dh 2boh lw hoa absolute yb2 2boh relative*/
+    height: 95%; /*msa7t tol 2l4a4a*/
+}
+ul li a{
+    display: block;
+    text-decoration: none;/* 2l5at 2ly ta7t 2lklma */
+    padding: 10px; /*bnb3ad 2lklam 3an ba3d baltol */
+    margin: 10px 0; /*bo3d kol morab3 3an ba3d*/
+    border-radius: 8px; /*na7t 2lmorab3 dayra*/
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s; /*t25yr */
+}
+ul li a:hover, .active, .data-info .box1:hover, td:hover{
+    background-color: #ffffff55;
+}
+.log-out
+{
+    position: absolute; /*yanzl ta7t*/
+    bottom: 0;
+    width: 100%; /*3l4an yb2 2l3ard wa7d lma 2sa8r*/
+}
+.log-out a{
+      background-color: #a00;
+}
+/* icon */
+ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    background-color: #0481ff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;  /*m3naha 10 px mn fo2 w mn ta7t w 0 mn 2l4mal w 2lymyn*/
+
+}
+.data-info{
+    display: flex;
+    align-items: center; /*ybo nafs 2lmsafa benhom w ben ba3d*/
+    justify-content: space-between;
+    flex-wrap: wrap; /*lw mafy4 msa7a ana hanzl lta7t*/
+    gap: 10px;
+}
+.data-info .box1{
+    background-color: #364757;
+    height: 150px;
+    flex-basis: 150px; /*nafs 5asyt 2l width bs b4akl 2dfal*/
+    flex-grow: 1; /*lw fy msa7a hatnmo feha w lw mafy4 hayt3mlhom wrab w haynzlo ta7t ba3d*/
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*masafa 7awlhom mn 2lgnab w fo2 w ta7t*/
+    
+
+}
+.data-info .box1 i{
+    font-size: 40px;
+
+}
+.data-info .box1 .data{
+    text-align: center;
+}
+.data-info .box1 .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px; /*btt7akm fy 2lmsafat 2ly byn 2l3nasr bta3ty*/
+    
+}
+td, th{
+    background-color: #364757;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: #0481ff;
+}
+.price, .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    background-color: green;
+}
+.count{
+    background-color: gold;
+    color: black;
+}
